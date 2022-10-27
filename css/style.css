@@ -42,25 +42,26 @@ h1{
 
 /* Main section */
 
+.row{
+    margin:0 -10px 20px;
+}
+
 .column{
     color: white;
     float: left;
     width: calc(100%/3);
     padding: 0 10px;
-}
-
-.card{
-    background-color: black;
-    height: 100px;
+    overflow: auto;
 }
 
 .card > img{
     height: 100px;
     float: left;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 
 .worker-info{
+    background-color: black;
     padding: 15px;
     height: 100px;
     line-height: 25px;
