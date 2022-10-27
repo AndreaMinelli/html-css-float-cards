@@ -14,13 +14,55 @@ body{
 .container{
     max-width: 1080px;
     margin: 0 auto;
-    text-align: center;
 }
 
+a{
+    text-decoration: none;
+    color: rgb(87,176,221);
+}
+
+/* Utilities */
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Header */
 header{
-    margin: 2rem 0;
+    margin: 3rem 0;
+    text-align: center;
 }
 
 h1{
     color: rgb(229,49,112);
+    margin-bottom: 2rem;
 }
+
+/* Main section */
+
+.column{
+    color: white;
+    float: left;
+    width: calc(100%/3);
+    border: 1px solid white;
+}
+
+.card{
+    background-color: black;
+    height: 100px;
+}
+
+.card > img{
+    height: 100px;
+    float: left;
+    margin-right: 1rem;
+}
+
+.worker-info{
+    padding: 15px;
+    height: 100px;
+    line-height: 25px;
+}
+
